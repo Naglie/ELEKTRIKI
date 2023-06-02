@@ -15,10 +15,15 @@ export default class Footer extends Component {
                         <h3>Партнеры по сотрудничеству</h3>
                     </div>
                     <div className="d-flex">
-                        <img src={img1} width="255" height="100"><a href='https://hariduskopter.ee/'></a></img>
-                        <img src={img2} width="255" height="100"><a href='https://www.harno.ee/'></a></img>
-                        <img src={img3} width="255" height="100"><a href='https://integratsioon.ee/'></a></img>
-                        <img src={img4} width="255" height="100"><a href='https://www.kutseregister.ee/ctrl/et/KAO/vaata/10583873'></a></img>
+                        {/* <a href='https://hariduskopter.ee/'></a>
+                            <a href='https://www.harno.ee/'></a> 
+                            <a href='https://integratsioon.ee/'></a>
+                            <a href='https://www.kutseregister.ee/ctrl/et/KAO/vaata/10583873'></a>
+                        */}
+                        <img src={img1} width="255" height="100" alt='hariduskopter'></img>
+                        <img src={img2} width="255" height="100" alt='harno'></img>
+                        <img src={img3} width="255" height="100" alt='integratsioon'></img>
+                        <img src={img4} width="255" height="100" alt='kutseregister'></img>
                     </div>
                 </div>
                 <div className="d-flex">

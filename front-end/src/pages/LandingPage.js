@@ -9,16 +9,16 @@ import Cover from '../components/Cover';
 
 export default function LandingPage() {
     const coverRef = useRef();
-    const aboutRef = useRef();
-    const reqRef = useRef();
-    const contactRef = useRef();
-    const partnerRef = useRef();
-    const galleryRef = useRef();
-    const formRef = useRef();
+    // const aboutRef = useRef();
+    // const reqRef = useRef();
+    // const contactRef = useRef();
+    // const partnerRef = useRef();
+    // const galleryRef = useRef();
+    // const formRef = useRef();
 
-    function carouselClick() {
-        galleryRef.current.scrollIntoView({behavior: 'smooth'});
-    }
+    // function carouselClick() {
+    //     galleryRef.current.scrollIntoView({behavior: 'smooth'});
+    // }
 
     return (
         <>
