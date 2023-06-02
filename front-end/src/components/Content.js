@@ -7,13 +7,13 @@ import Login from './Login';
 
 export default function Content() {
     return (
-        <main className='flex-shrink-0'>
-            <Router>
-                <Routes>
-                    <Route exact path='/' element={<LandingPage />} />
-                    {/* <Route path='/login' element={<Login />} /> */}
-                </Routes>
-            </Router>
-        </main>
-    )
+       <main className="flex-shrink-0">
+          <Router>
+             <Routes>
+                <Route exact path="/" element={<LandingPage />} />
+                <Route path="/login" element={<Login />} />
+             </Routes>
+          </Router>
+       </main>
+    );
 }
