@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Июн 02 2023 г., 08:18
+-- Время создания: Июн 02 2023 г., 08:23
 -- Версия сервера: 10.4.24-MariaDB
 -- Версия PHP: 8.1.6
 
@@ -34,6 +34,13 @@ CREATE TABLE `admin` (
   `email` varchar(255) NOT NULL,
   `refresh_token` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Дамп данных таблицы `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `password`, `email`, `refresh_token`) VALUES
+(1, 'admin', '$2b$10$YK.LalXd9uyeSV96rqO/cumZqeFn.UyKF/xRp.Ni9fGmOhRd99QPe', 'admin@ayaya.dev', NULL);
 
 -- --------------------------------------------------------
 
@@ -80,7 +87,7 @@ ALTER TABLE `application`
 -- AUTO_INCREMENT для таблицы `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT для таблицы `application`
