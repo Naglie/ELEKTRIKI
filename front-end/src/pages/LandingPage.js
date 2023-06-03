@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Cover from '../components/Cover';
+import Cover from '../components/Cover.js';
 // import About from '../components/About';
 // import Requirements from '../components/Requirements';
 // import Contacts from '../components/Contacts';
@@ -8,24 +8,24 @@ import Cover from '../components/Cover';
 // import Form from '../components/Form';
 
 export default function LandingPage() {
-    const coverRef = useRef();
-    // const aboutRef = useRef();
-    // const reqRef = useRef();
-    // const contactRef = useRef();
-    // const partnerRef = useRef();
-    // const galleryRef = useRef();
-    // const formRef = useRef();
+   const coverRef = useRef();
+   // const aboutRef = useRef();
+   // const reqRef = useRef();
+   // const contactRef = useRef();
+   // const partnerRef = useRef();
+   // const galleryRef = useRef();
+   // const formRef = useRef();
 
-    // function carouselClick() {
-    //     galleryRef.current.scrollIntoView({behavior: 'smooth'});
-    // }
+   // function carouselClick() {
+   //     galleryRef.current.scrollIntoView({behavior: 'smooth'});
+   // }
 
-    return (
-        <>
-            <section ref={coverRef}>
-                <Cover />
-            </section>
-            {/* <section ref={aboutRef}>
+   return (
+      <>
+         <section ref={coverRef} className="pt-0">
+            <Cover />
+         </section>
+         {/* <section ref={aboutRef}>
                 <About />
             </section>
             <section ref={reqRef}>
@@ -43,6 +43,6 @@ export default function LandingPage() {
             <section ref={formRef}>
                 <Form />
             </section> */}
-        </>
-    )
+      </>
+   );
 }
