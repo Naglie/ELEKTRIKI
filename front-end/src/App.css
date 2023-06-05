@@ -79,6 +79,12 @@ a.cover-btn {
   font-size: 3rem;
 }
 
+a.cover-btn:hover {
+  background-color: #FF8F00;
+  border-color: #FF8F00;
+  color: #ffff;
+}
+
 /* End of Cover */
 
 /* Description */
@@ -145,6 +151,58 @@ a.cover-btn {
 
 /* Requirements */
 
+.reqHeading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reqHeading h2 {
+  width: 35%;
+  background-color: #DA7E08;
+  color: #ffff;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.reqContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgb(79,146,79);
+  background: radial-gradient(circle, rgba(218,126,8,1) 50% , rgba(79,146,79,1) 100%);
+}
+
+.reqTextBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  margin: 2rem;
+  color: #ffff;
+  /* background-color: #DA7E08; */
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+a.req-btn {
+  background-color: #DA7E08;
+  border-color: #DA7E08;
+  color: #ffff;
+  margin-top: 4rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+a.req-btn:hover {
+  background-color: #FF8F00;
+  border-color: #FF8F00;
+  color: #ffff;
+}
 /* End of Requirements */
 
 /* Gallery */

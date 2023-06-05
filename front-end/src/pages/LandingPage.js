@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import Cover from '../components/Cover.js';
 import About from '../components/About';
-// import Requirements from '../components/Requirements';
+import Requirements from '../components/Requirements';
 // import Contacts from '../components/Contacts';
 // import Partners from '../components/Partners';
 // import Gallery from '../components/Gallery';
@@ -10,7 +10,7 @@ import About from '../components/About';
 export default function LandingPage() {
    const coverRef = useRef();
    const aboutRef = useRef();
-   // const reqRef = useRef();
+   const reqRef = useRef();
    // const contactRef = useRef();
    // const partnerRef = useRef();
    // const galleryRef = useRef();
@@ -28,10 +28,10 @@ export default function LandingPage() {
          <section ref={aboutRef}>
             <About />
         </section>
-        {/*  <section ref={reqRef}>
-                <Requirements />
-            </section>
-            <section ref={contactRef}>
+        <section ref={reqRef}>
+            <Requirements />
+        </section>
+ {/*            <section ref={contactRef}>
                 <Contacts />
             </section>
             <section ref={partnerRef}>
