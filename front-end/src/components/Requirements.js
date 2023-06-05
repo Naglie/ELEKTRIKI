@@ -21,7 +21,7 @@ export default function Requirements() {
                 </p>
             </div>
         </div>
-        <a className='btn req-btn' href='#description'>Подать заявку</a>
+        <a className='btn req-btn' href='#form'>Подать заявку</a>
     </div>
   )
 }
