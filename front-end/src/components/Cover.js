@@ -1,18 +1,19 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import img from '../assets/elektrik1.png';
 
 export default function Cover() {
   return (
     <Container
+      id="cover"
       fluid
       style={{
         height: '1080px',
         width: '100%',
         backgroundSize: 'cover',
-        backgroundImage: 'url(' + img + ')',
+        // background: 'linear-gradient(rgba(0, 0, 0, 0.7)), "url(' + img + ')"',
+        // backgroundImage: 'url(' + img + ')',
       }}
-    >
+      >
       <div
         style={{
           width: '50%',
@@ -30,7 +31,10 @@ export default function Cover() {
             color: 'white',
           }}
         >
-          <h1>Светлое будущее начинается с нами!</h1>
+          <h1 style={{ 
+            fontSize: '98px',
+          }}>Светлое будущее начинается с нами!</h1>
+          <a className='btn btn-warning btn-lg cover-btn' href='#description'>Подробнее</a>
         </div>
       </div>
     </Container>

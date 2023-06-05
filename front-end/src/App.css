@@ -36,3 +36,125 @@
     transform: rotate(360deg);
   }
 }
+
+/* Header */
+
+.header {
+  position: fixed;
+  z-index: 1;
+  height: 75px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: .3s ease-in;
+  overflow: hidden;
+}
+.header-bg {
+  background-color: #FF8F00;
+}
+a.nav-link {
+  color: #ffff;
+}
+
+/* End of Header */
+
+/* Cover */
+
+#cover {
+  background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.4), 
+          rgba(0, 0, 0, 0.4)
+        ),
+        /* bottom, image */
+        url('./assets/elektrik1.png');
+}
+a.cover-btn {
+  background-color: #DA7E08;
+  border-color: #DA7E08;
+  color: #ffff;
+  margin-top: 4rem;
+  padding: 1.5rem 3rem;
+  font-size: 3rem;
+}
+
+/* End of Cover */
+
+/* Description */
+
+#description {
+  flex-direction: column;
+}
+
+#descBg {
+  width: 100%;
+  /* height: 1080px; */
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  /* background-repeat: none; */
+  object-fit: contain;
+  background:
+  /* top, transparent black, faked with gradient */ 
+  linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ),
+  /* bottom, image */
+  url('./assets/elektrik2.png');
+}
+.descContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+}
+.descHeading {
+  /* width: 50%; */
+  background-color: #DA7E08;
+  color: #ffff;
+  font-size: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+
+}
+.descBoxes {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  right: 0;
+  /* align-items: flex-end; */
+  flex-wrap: wrap;
+}
+.descBox {
+  width: 25%;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #DA7E08;
+  color: #ffff;
+  border-radius: 10px;
+
+}
+
+/* End of Description */
+
+/* Requirements */
+
+/* End of Requirements */
+
+/* Gallery */
+
+/* End of Gallery */
+
+/* Contact */
+
+/* End of Contact */
+
+/* Footer */
+
+/* End of Footer */

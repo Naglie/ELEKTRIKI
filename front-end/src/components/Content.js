@@ -11,6 +11,7 @@ export default function Content() {
           <Router>
              <Routes>
                 <Route exact path="/" element={<LandingPage />} />
+                
                 <Route path="/login" element={<Login />} />
              </Routes>
           </Router>

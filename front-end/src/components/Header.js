@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import logo from '../assets/logo.png';
 
 export default function Header() {
+   const [color, setColor] = useState(false);
+   const changeNavbarColor = () => {
+      if (window.scrollY >= 160) {
+         setColor(true);
+      } else {
+         setColor(false);
+      }
+   };
+
+   window.addEventListener('scroll', changeNavbarColor);
+
    return (
-      <header>
+      <div className={color ? 'header header-bg' : 'header'}>
          <Navbar
             scrolling
             dark
@@ -30,6 +41,6 @@ export default function Header() {
                </NavbarCollapse>
             </Container>
          </Navbar>
-      </header>
+      </div>
    );
 }
