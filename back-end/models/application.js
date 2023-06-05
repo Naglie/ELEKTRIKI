@@ -27,7 +27,7 @@ Application.init(
    {
       sequelize: db,
       modelName: 'application',
-      tableName: 'applications',
+      tableName: 'application',
       timestamps: false,
    }
 );
