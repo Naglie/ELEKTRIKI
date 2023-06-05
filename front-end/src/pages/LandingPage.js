@@ -4,7 +4,7 @@ import About from '../components/About';
 import Requirements from '../components/Requirements';
 // import Contacts from '../components/Contacts';
 // import Partners from '../components/Partners';
-// import Gallery from '../components/Gallery';
+import Gallery from '../components/Gallery';
 // import Form from '../components/Form';
 
 export default function LandingPage() {
@@ -13,7 +13,7 @@ export default function LandingPage() {
    const reqRef = useRef();
    // const contactRef = useRef();
    // const partnerRef = useRef();
-   // const galleryRef = useRef();
+   const galleryRef = useRef();
    // const formRef = useRef();
 
    // function carouselClick() {
@@ -33,14 +33,14 @@ export default function LandingPage() {
         </section>
  {/*            <section ref={contactRef}>
                 <Contacts />
-            </section>
-            <section ref={partnerRef}>
+            </section> */}
+         {/* <section ref={partnerRef}>
                 <Partners />
-            </section>
-            <section ref={galleryRef}>
-                <Gallery />
-            </section>
-            <section ref={formRef}>
+            </section> */}
+         <section ref={galleryRef}>
+            <Gallery />
+         </section>
+         {/* <section ref={formRef}>
                 <Form />
             </section> */}
       </>

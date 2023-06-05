@@ -93,14 +93,15 @@ a.cover-btn:hover {
   flex-direction: column;
 }
 
+
 #descBg {
   width: 100%;
-  /* height: 1080px; */
+  /* height: 100%; */
   display: flex;
   align-items: end;
   flex-direction: column;
   /* background-repeat: none; */
-  object-fit: contain;
+  object-fit: fill;
   background:
   /* top, transparent black, faked with gradient */ 
   linear-gradient(
@@ -109,6 +110,9 @@ a.cover-btn:hover {
   ),
   /* bottom, image */
   url('./assets/elektrik2.png');
+  background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .descContainer {
   width: 100%;
@@ -116,29 +120,48 @@ a.cover-btn:hover {
   flex-direction: column;
   align-items: center;
   padding: 4rem 0;
+  align-items: end;
 }
 .descHeading {
-  /* width: 50%; */
-  background-color: #DA7E08;
+  width: 50%;
+    /* background-color: #DA7E08; */
   color: #ffff;
   font-size: 3rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 1rem 2rem;
   border-radius: 10px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+p {
+  font-size: 16px;
+}
+
+.descHeadingColor {
+  background-color: #DA7E08;
+  padding: 1rem 2rem;
+  border-radius: 10px;
 }
 .descBoxes {
   width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   right: 0;
   /* align-items: flex-end; */
   flex-wrap: wrap;
 }
 .descBox {
   width: 25%;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
   margin: 1rem;
   padding: 2rem;
   background-color: #DA7E08;
@@ -147,6 +170,31 @@ a.cover-btn:hover {
 
 }
 
+.descDetail {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descDetailDiv {
+  width: 45%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 36px;
+  padding: 15px;
+  background-color: #DA7E08;
+  border-radius: 10px;
+}
+
+.detail {
+  font-size: 21px;
+  color: white;
+}
 /* End of Description */
 
 /* Requirements */
