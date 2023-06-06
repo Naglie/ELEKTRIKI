@@ -21,7 +21,7 @@ export default function Contacts() {
                         <h2>Контактные данные</h2>
                     </div>
                     <div className="info">
-                        <p>Информация о поступлении(по рабочим дням с 9:00 до 15:00):</p>
+                        <p>Информация о поступлении (по рабочим дням с 9:00 до 15:00):</p>
                         <ul>
                             <li>Силламяэ: телефон +372 5628 1728</li>
                             <li>Йыхви: телефон +372 5308 8342</li>
@@ -29,10 +29,10 @@ export default function Contacts() {
                         </ul>
                     </div>
                     <div className="info">
-                        <p>Дополнительная информация по э-почте: vastuvott@ivkhk.ee</p>
+                        <p>Дополнительная информация по э-почте: <span className="text-decoration-underline">vastuvott@ivkhk.ee</span></p>
                         <p>Galina Trofimova, erialade juht (tehnoloogia)</p>
                         <ul>
-                            <li>galina.trofimova@ivkhk.ee</li>
+                            <li className="text-decoration-underline">galina.trofimova@ivkhk.ee</li>
                             <li>+372 5283 670</li>
                         </ul>
                     </div>

@@ -37,7 +37,9 @@ export default function Header() {
                      <Nav.Link href="#requirements">Условия</Nav.Link>
                      <Nav.Link href="#gallery">Галерея</Nav.Link>
                      <Nav.Link href="#contacts">Контакты</Nav.Link>
-                     <Nav.Link href="/applications">akakakka</Nav.Link>
+                     
+                     {/* temporary link */}
+                     <Nav.Link href="/applications">akakakka</Nav.Link> 
                   </Nav>
                </NavbarCollapse>
             </Container>
