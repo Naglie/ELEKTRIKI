@@ -1,28 +1,44 @@
 import Admin from '../models/admin.js';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+
+export const getAdmin = async (req, res) => {
+   try {
+      const admin = await Admin.findAll({
+         attributes: ['id', 'username', 'email', 'role'],
+         where: {
+            email: req.email,
+         },
+      });
+      res.json(admin);
+   } catch (error) {
+      console.log(error);
+   }
+};
 
 export const Login = async (req, res) => {
    try {
-      const user = await Admin.findAll({
+      const admin = await Admin.findAll({
          where: {
-            username: req.body.username,
+            email: req.body.email,
          },
       });
       //----------------bcrypt password
-      const match = await bcrypt.compare(req.body.password, user[0].password);
+      const match = await bcrypt.compare(req.body.password, admin[0].password);
       if (!match) return res.status(400).json({ msg: 'Wrong Password' });
-      const userId = user[0].id;
-      const name = user[0].name;
-      const email = user[0].email;
+      const userId = admin[0].id;
+      const username = admin[0].username;
+      const email = admin[0].email;
       //jwt.sign создание токена-исп для аутентификации/авторизации пользователей
       const accessToken = jwt.sign(
-         { userId, name, email },
+         { userId, username, email },
          process.env.ACCESS_TOKEN_SECRET,
          {
             expiresIn: '15s',
          }
       );
       const refreshToken = jwt.sign(
-         { userId, name, email },
+         { userId, username, email },
          process.env.REFRESH_TOKEN_SECRET,
          {
             expiresIn: '1d',
@@ -56,7 +72,7 @@ export const Logout = async (req, res) => {
    });
    if (!user[0]) return res.sendStatus(204);
    const userId = user[0].id;
-   await Users.update(
+   await Admin.update(
       { refresh_token: null },
       {
          where: {

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 export default function Login() {
-   const [username, setUsername] = useState('');
+   const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
    const [msg, setMsg] = useState('');
    const navigate = useNavigate();
@@ -13,7 +13,7 @@ export default function Login() {
       e.preventDefault();
       try {
          await axios.post(`http://localhost:5000/admin/login`, {
-            username: username,
+            email: email,
             password: password,
          });
          navigate('/');
@@ -35,13 +35,13 @@ export default function Login() {
                         <p className="has-text-centered">{msg}</p>
                         <Form.Group className="mb-3">
                            <Form.Label className="text-center">
-                              Email address
+                              Email
                            </Form.Label>
                            <Form.Control
                               type="email"
-                              placeholder="Enter username"
-                              value={username}
-                              onChange={(e) => setUsername(e.target.value)}
+                              placeholder="Enter Email"
+                              value={email}
+                              onChange={(e) => setEmail(e.target.value)}
                            />
                         </Form.Group>
                         <Form.Group className="mb-3">

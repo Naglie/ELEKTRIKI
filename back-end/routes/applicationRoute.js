@@ -10,7 +10,7 @@ const applicationrouter = express.Router();
 
 applicationrouter.get('/', getApplications);
 applicationrouter.get('/:id', getApplicationById);
-applicationrouter.post('/', createApplication);
+applicationrouter.post('/send', createApplication);
 applicationrouter.put('/:id', approveApplication);
 
 export default applicationrouter;

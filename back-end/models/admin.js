@@ -19,7 +19,7 @@ Admin.init(
       modelName: 'admin',
       freezeTableName: true,
       tableName: 'admin',
-      timestamps: true,
+      timestamps: false,
    }
 );
 
