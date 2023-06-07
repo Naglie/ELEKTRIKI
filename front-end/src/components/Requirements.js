@@ -1,8 +1,9 @@
 import React from 'react'
+import { Container } from 'react-bootstrap';
 
 export default function Requirements() {
   return (
-    <div id="requirements">
+    <Container id="requirements">
         <div className='reqHeading'>
             <h2>
                 Условия для поступления для обучения
@@ -22,6 +23,6 @@ export default function Requirements() {
             </div>
         </div>
         <a className='btn req-btn' href='#form'>Подать заявку</a>
-    </div>
+    </Container>
   )
 }

@@ -5,7 +5,7 @@ import Requirements from '../components/Requirements';
 import Contacts from '../components/Contacts';
 import Partners from '../components/Partners';
 import Gallery from '../components/Gallery';
-// import Form from '../components/Form';
+import Form from '../components/ApplicationForm.js';
 
 export default function LandingPage() {
    const coverRef = useRef();
@@ -14,7 +14,7 @@ export default function LandingPage() {
    const contactRef = useRef();
    const partnerRef = useRef();
    const galleryRef = useRef();
-   // const formRef = useRef();
+   const formRef = useRef();
 
    function carouselClick() {
        galleryRef.current.scrollIntoView({behavior: 'smooth'});
@@ -40,9 +40,9 @@ export default function LandingPage() {
          <section ref={partnerRef}>
             <Partners />
          </section>
-         {/* <section ref={formRef}>
-                <Form />
-            </section> */}
+         <section ref={formRef}>
+            <Form />
+         </section>
       </>
    );
 }
