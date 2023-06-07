@@ -16,7 +16,7 @@ export default function Login() {
             email: email,
             password: password,
          });
-         navigate('/');
+         navigate('/applications');
          window.location.reload();
       } catch (error) {
          if (error.response) {

@@ -27,7 +27,7 @@ export default function Header() {
             variant="dark"
          >
             <Container>
-               <Navbar.Brand href="#">
+               <Navbar.Brand href="/">
                   <img src={logo} alt="logo" width="50" height="50" />
                </Navbar.Brand>
                <NavbarToggle aria-controls="responsive-navbar-nav" />
@@ -37,9 +37,9 @@ export default function Header() {
                      <Nav.Link href="#requirements">Условия</Nav.Link>
                      <Nav.Link href="#gallery">Галерея</Nav.Link>
                      <Nav.Link href="#contacts">Контакты</Nav.Link>
-                     
+
                      {/* temporary link */}
-                     <Nav.Link href="/applications">akakakka</Nav.Link> 
+                     <Nav.Link href="/applications">akakakka</Nav.Link>
                   </Nav>
                </NavbarCollapse>
             </Container>
