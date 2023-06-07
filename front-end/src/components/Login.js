@@ -25,8 +25,8 @@ export default function Login() {
       }
    };
    return (
-      <Container className="mt-1">
-         <h2 className="text-center mt-3">Login form</h2>
+      <Container id="login" className="mt-1">
+         <h1 className="text-center mt-3">Login form</h1>
          <Row className="d-flex justify-content-center align-items-center">
             <Col md={8} lg={6} xs={12}>
                <Card className="shadow">

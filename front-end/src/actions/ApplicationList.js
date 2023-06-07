@@ -16,7 +16,7 @@ export default function ApplicationList() {
       getApplication();
    }, []);
    return (
-      <Container className="mt-1">
+      <Container id="appList" className="mt-1">
          <h2>Cписок заявок</h2>
          <Card className="shadow">
             <Card.Body>

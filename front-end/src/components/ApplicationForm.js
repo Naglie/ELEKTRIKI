@@ -41,8 +41,8 @@ export default function ApplicationForm() {
    return (
       <Container id="form">
          <div className="container">
-            <div className="row justify-content-center">
-               <h2>Form</h2>
+            <div className="row justify-content-center formHeading">
+               <h2>Форма для подачи заявки</h2>
             </div>
             <div className="justify-content-center">
                <Card className="shadow">

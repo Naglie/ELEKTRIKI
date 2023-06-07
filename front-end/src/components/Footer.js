@@ -9,12 +9,12 @@ export default class Footer extends Component {
    render() {
       return (
          <footer className="footer mt-auto pt-3">
-            <Container className="justify-content-center">
-               <div className="d-flex flex-wrap">
+            <Container className="footerContent">
+               <div className="d-flex flex-wrap footerPartners">
                   <div>
                      <h3>Партнеры по сотрудничеству</h3>
                   </div>
-                  <div className="d-flex">
+                  <div className="d-flex footerPartnerImages">
                      {/* <a href='https://hariduskopter.ee/'></a>
                             <a href='https://www.harno.ee/'></a> 
                             <a href='https://integratsioon.ee/'></a>
@@ -41,7 +41,7 @@ export default class Footer extends Component {
                      ></img>
                   </div>
                </div>
-               <div className="d-flex">
+               <div className="d-flex footerContacts1">
                   <div>
                      <h3>Общий контакт</h3>
                   </div>
@@ -52,7 +52,7 @@ export default class Footer extends Component {
                      <span>e-post: info@ivkhk.ee</span>
                   </div>
                </div>
-               <div className="d-flex">
+               <div className="d-flex footerContacts2">
                   <div>
                      <h3>Контакты</h3>
                   </div>
@@ -69,21 +69,13 @@ export default class Footer extends Component {
             </Container>
             <Container className="text-center" fluid>
                <div id="links">
-                  <a href="https://kutsehariduskeskus.ee/ru">Главный сайт</a>
-                  <a href="https://kutsehariduskeskus.ee/ru/sitemap">
-                     Карта главного сайта
-                  </a>
+                  <a href="https://kutsehariduskeskus.ee/ru">Главный сайт </a>
+                  <a href="https://kutsehariduskeskus.ee/ru/sitemap">Карта главного сайта</a>
                   <a href="https://www.facebook.com/IVKHK">Facebook</a>
-                  <a href="https://www.instagram.com/idavirumaa_kutsehariduskeskus/">
-                     Instagram
-                  </a>
-                  <a href="https://www.youtube.com/channel/UC6TPd9ePy3n-vFQRgtbhx-w">
-                     Youtube
-                  </a>
+                  <a href="https://www.instagram.com/idavirumaa_kutsehariduskeskus/">Instagram</a>
+                  <a href="https://www.youtube.com/channel/UC6TPd9ePy3n-vFQRgtbhx-w">Youtube</a>
                   <a href="https://vk.com/ivkhk">VKontakte</a>
-                  <a href="https://www.youtube.com/channel/UCLxa63lO1rkF62tv8d7P4Cw/videos">
-                     Kooli TV
-                  </a>
+                  <a href="https://www.youtube.com/channel/UCLxa63lO1rkF62tv8d7P4Cw/videos">Kooli TV</a>
                   <a href="/Login">Admin panel</a>
                </div>
                <div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container } from 'react-bootstrap';
 import img1 from '../assets/eestienergia.png'
 import img2 from '../assets/volt.png'
 import img3 from '../assets/elektrilevi.png'

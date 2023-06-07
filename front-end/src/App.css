@@ -72,6 +72,7 @@ a.nav-link {
         /* bottom, image */
         url('./assets/elektrik1.png');
 }
+
 a.cover-btn {
   background-color: #DA7E08;
   border-color: #DA7E08;
@@ -95,7 +96,6 @@ a.cover-btn:hover {
   flex-direction: column;
 }
 
-
 #descBg {
   width: 100%;
   /* height: 100%; */
@@ -116,6 +116,7 @@ a.cover-btn:hover {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .descContainer {
   width: 100%;
   display: flex;
@@ -124,6 +125,7 @@ a.cover-btn:hover {
   padding: 4rem 0;
   align-items: end;
 }
+
 .descHeading {
   width: 50%;
     /* background-color: #DA7E08; */
@@ -134,9 +136,9 @@ a.cover-btn:hover {
   padding: 1rem 2rem;
   border-radius: 10px;
   display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  align-items: center;
+  justify-content: center;
+}
 
 p {
   font-size: 16px;
@@ -266,6 +268,10 @@ a.req-btn:hover {
   justify-content: center;
 }
 
+/* End of Gallery */
+
+/* Partners */
+
 .partnerHeading {
   width: 100%;
   display: flex;
@@ -291,7 +297,7 @@ a.req-btn:hover {
 .partnerRow img {
   margin: 3rem;
 }
-/* End of Gallery */
+/* End of Partners */
 
 /* Contact */
 
@@ -334,6 +340,81 @@ a.req-btn:hover {
 
 /* End of Contact */
 
+/* Form */
+
+.formHeading h2 {
+  width: 35%;
+  color: #ffff;
+  background-color: #DA7E08;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.25);
+
+}
+
+#form {
+  margin-bottom: 4rem;  
+}
+
+/* End of Form */
+
 /* Footer */
 
+footer {
+  background-color: rgb(79,146,79);
+  bottom: 0;
+}
+
+footer h3, p, span {
+  color: #ffff;
+}
+
+#links a {
+  color: #ffff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+div.footerContent {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.footerPartners {
+  margin: 2rem;
+  width: 75%;
+}
+
+.footerPartners h3 {
+  width: 100%;
+}
+
+.footerPartners .footerPartnerImages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* padding: 2rem; */
+}
+
+.footerPartners .footerPartnerImages img {
+  /* width: 100px; */
+  /* height: 100px; */
+  margin: 16px;
+}
+
 /* End of Footer */
+
+/* Admin panel (application panel) */
+
+/* #login {
+  width: 300%;
+  background-color: black;
+  padding: 5rem;
+}
+#login h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+} */
