@@ -9,24 +9,29 @@ export default class Footer extends Component {
    render() {
       return (
          <footer className="footer mt-auto pt-3">
-            <Container className="footerContent">
+            <div className="footerContent">
                <div className="d-flex flex-wrap footerPartners">
                   <div>
                      <h3>Партнеры по сотрудничеству</h3>
                   </div>
-                  <div className="d-flex footerPartnerImages">
-                     {/* <a href='https://hariduskopter.ee/'></a>
-                            <a href='https://www.harno.ee/'></a> 
-                            <a href='https://integratsioon.ee/'></a>
-                            <a href='https://www.kutseregister.ee/ctrl/et/KAO/vaata/10583873'></a>
-                        */}
+                  <div className="d-flex footerPartnerImages">                  
                      <img
                         src={img1}
                         width="255"
                         height="100"
                         alt="hariduskopter"
                      ></img>
-                     <img src={img2} width="255" height="100" alt="harno"></img>
+                     <img 
+                        src={img2} 
+                        width="255" 
+                        height="100" 
+                        alt="harno"
+                     ></img>
+                  {/* <a href='https://hariduskopter.ee/'></a>
+                           <a href='https://www.harno.ee/'></a> 
+                           <a href='https://integratsioon.ee/'></a>
+                           <a href='https://www.kutseregister.ee/ctrl/et/KAO/vaata/10583873'></a>
+                     */}
                      <img
                         src={img3}
                         width="255"
@@ -37,11 +42,11 @@ export default class Footer extends Component {
                         src={img4}
                         width="255"
                         height="100"
-                        alt="kutseregister"
+                        alt="kutsekoda"
                      ></img>
                   </div>
                </div>
-               <div className="d-flex footerContacts1">
+               <div className="d-flex footerContacts">
                   <div>
                      <h3>Общий контакт</h3>
                   </div>
@@ -52,7 +57,7 @@ export default class Footer extends Component {
                      <span>e-post: info@ivkhk.ee</span>
                   </div>
                </div>
-               <div className="d-flex footerContacts2">
+               <div className="d-flex footerContacts">
                   <div>
                      <h3>Контакты</h3>
                   </div>
@@ -66,10 +71,10 @@ export default class Footer extends Component {
                      </span>
                   </div>
                </div>
-            </Container>
-            <Container className="text-center" fluid>
+            </div>
+            <div className="text-center" fluid>
                <div id="links">
-                  <a href="https://kutsehariduskeskus.ee/ru">Главный сайт </a>
+                  <a href="https://kutsehariduskeskus.ee/ru">Главный сайт</a>
                   <a href="https://kutsehariduskeskus.ee/ru/sitemap">Карта главного сайта</a>
                   <a href="https://www.facebook.com/IVKHK">Facebook</a>
                   <a href="https://www.instagram.com/idavirumaa_kutsehariduskeskus/">Instagram</a>
@@ -84,7 +89,7 @@ export default class Footer extends Component {
                      Vassiljev, Daniil Divissenko, Jegor Golub
                   </p>
                </div>
-            </Container>
+            </div>
          </footer>
       );
    }
