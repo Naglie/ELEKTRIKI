@@ -16,7 +16,7 @@ export const getApplicationById = async (req, res) => {
             id: req.params.id,
          },
       });
-      res.status(200).json(application);
+      res.json(application[0]);
    } catch (error) {
       res.status(500).json({ error: error.message });
    }
@@ -45,6 +45,24 @@ export const approveApplication = async (req, res) => {
       );
       res.json({
          message: 'Application approved successfully',
+      });
+   } catch (error) {
+      res.status(500).json({ error: error.message });
+   }
+};
+
+export const rejectApplication = async (req, res) => {
+   try {
+      await Application.update(
+         { approved: 'Отклонено' },
+         {
+            where: {
+               id: req.params.id,
+            },
+         }
+      );
+      res.json({
+         message: 'Application rejected successfully',
       });
    } catch (error) {
       res.status(500).json({ error: error.message });

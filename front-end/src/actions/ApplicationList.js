@@ -43,7 +43,7 @@ export default function ApplicationList() {
                                  <td>{application.approved}</td>
                                  <td className="text-center">
                                     <Link
-                                       to={`/detail/${application.id}`}
+                                       to={`/applications/${application.id}`}
                                        className="me-1"
                                     >
                                        <Button variant="success" size="sm">

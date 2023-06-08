@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import gallery1 from '../assets/Gallery1.jpg';
 import gallery2 from '../assets/Gallery2.jpg';

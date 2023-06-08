@@ -4,13 +4,15 @@ import {
    getApplications,
    createApplication,
    approveApplication,
+   rejectApplication,
 } from '../controllers/applicationController.js';
 
 const applicationrouter = express.Router();
 
 applicationrouter.get('/', getApplications);
-applicationrouter.get('/:id', getApplicationById);
+applicationrouter.get('/detail/:id', getApplicationById);
 applicationrouter.post('/send', createApplication);
-applicationrouter.put('/:id', approveApplication);
+applicationrouter.post('/approve/:id', approveApplication);
+applicationrouter.put('/reject/:id', rejectApplication);
 
 export default applicationrouter;

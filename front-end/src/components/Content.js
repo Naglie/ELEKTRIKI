@@ -5,6 +5,7 @@ import axios from 'axios';
 import LandingPage from '../pages/LandingPage';
 import Login from './Login';
 import ApplicationList from '../actions/ApplicationList';
+import ApplicationDetail from '../pages/ApplicationDetail';
 
 export default function Content() {
    return (
@@ -15,6 +16,10 @@ export default function Content() {
 
                <Route path="/login" element={<Login />} />
                <Route path="/applications" element={<ApplicationList />} />
+               <Route
+                  path="/applications/:id"
+                  element={<ApplicationDetail />}
+               />
             </Routes>
          </Router>
       </main>
