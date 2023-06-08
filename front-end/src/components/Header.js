@@ -11,6 +11,16 @@ export default function Header() {
    const [color, setColor] = useState(false);
    const [name, setName] = useState('');
    let navbar_admin = [];
+   const path = window.location.pathname;
+   const ADMIN = () => {
+      if (
+         path === '/Login' ||
+         path === '/Applications' ||
+         path === '/Applications/:id'
+      ) {
+         setColor(false);
+      }
+   };
 
    const changeNavbarColor = () => {
       if (window.scrollY >= 160) {
@@ -29,6 +39,7 @@ export default function Header() {
          const response = await axios.get(`http://localhost:5000/admin/token`);
          const decoded = jwt_decode(response.data.accessToken);
          setName(decoded.name);
+         console.log(decoded);
       } catch (error) {
          console.log(error);
       }
@@ -40,7 +51,7 @@ export default function Header() {
          { name: 'Выйти', href: '/logout' },
       ];
    }
-
+   window.addEventListener('path', ADMIN);
    window.addEventListener('scroll', changeNavbarColor);
 
    return (
@@ -54,16 +65,25 @@ export default function Header() {
             variant="dark"
          >
             <Container>
-               <Navbar.Brand href="/">
+               <Navbar.Brand href="/#cover">
                   <img src={logo} alt="logo" width="50" height="50" />
                </Navbar.Brand>
                <NavbarToggle aria-controls="responsive-navbar-nav" />
                <NavbarCollapse id="basic-navbar-nav">
                   <Nav className="me-auto">
-                     <Nav.Link href="#description">Описание</Nav.Link>
-                     <Nav.Link href="#requirements">Условия</Nav.Link>
-                     <Nav.Link href="#gallery">Галерея</Nav.Link>
-                     <Nav.Link href="#contacts">Контакты</Nav.Link>
+                     <Nav.Link href="/#description">Описание</Nav.Link>
+                     <Nav.Link href="/#requirements">Условия</Nav.Link>
+                     <Nav.Link href="/#gallery">Галерея</Nav.Link>
+                     <Nav.Link href="/#contacts">Контакты</Nav.Link>
+                     <Nav.Link
+                        href="/#form"
+                        style={{
+                           backgroundColor: 'green',
+                           borderRadius: '10px',
+                        }}
+                     >
+                        ПОДАТЬ ЗАЯВКУ
+                     </Nav.Link>
                   </Nav>
                   <Nav>
                      {navbar_admin.map((item, index) => (

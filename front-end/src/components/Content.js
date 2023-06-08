@@ -6,6 +6,7 @@ import LandingPage from '../pages/LandingPage';
 import Login from './Login';
 import ApplicationList from '../actions/ApplicationList';
 import ApplicationDetail from '../pages/ApplicationDetail';
+import Logout from './Logout';
 
 export default function Content() {
    return (
@@ -20,6 +21,7 @@ export default function Content() {
                   path="/applications/:id"
                   element={<ApplicationDetail />}
                />
+               <Route exact path="/logout" element={<Logout />} />
             </Routes>
          </Router>
       </main>
