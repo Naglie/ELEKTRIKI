@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { Container, Card, Button } from 'react-bootstrap';
+import { Container, Card, Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 export default function ApplicationDetail() {
@@ -36,64 +36,195 @@ export default function ApplicationDetail() {
          <h2 className="text-center mt-3">Заявка #{application.id}</h2>
          <Card className="shadow">
             <Card.Body>
-               <div className="d-flex justify-content-center m-">
-                  <div className="name">
-                     <h3>Имя: {application.name}</h3>
+            <Form>
+               <div className="row mb-4">
+                  <div className="col">
+                     <div className="form-outline">
+                        <Form.Control
+                           type="text"
+                           className="form-control"
+                           id="applicantName"
+                           value={application.name}
+                           readOnly={true}
+                        
+                        />
+                        <Form.Label
+                           className="form-label"
+                           for="applicantName"
+                        >
+                           Имя
+                        </Form.Label>
+                     </div>
                   </div>
-
-                  <div className="surname">
-                     <h3>Фамилия: {application.surname}</h3>
+                  <div className="col">
+                     <div className="form-outline">
+                        <Form.Control
+                           type="text"
+                           className="form-control"
+                           id="applicantSurname"
+                           value={application.surname}
+                           readOnly={true}
+                        />
+                        <Form.Label class="form-label" for="applyForm">
+                           Фамилия
+                        </Form.Label>
+                     </div>
                   </div>
-               </div>
-
-               <div className="id_code">
-                  <h3>
-                     Идентификационный код: <br /> {application.id_code}
-                  </h3>
-               </div>
-               <div className="d-flex justify-content-center">
-                  <div className="birthday">
-                     <h3>Дата рождения: {application.date_of_birth}</h3>
-                  </div>
-                  <div className="education">
-                     <h3>Образование: {application.education}</h3>
-                  </div>
-               </div>
-               <div className="d-flex justify-content-center">
-                  <div className="address">
-                     <h3>Адрес: {application.address}</h3>
-                  </div>
-                  <div className="city">
-                     <h3>Город: {application.city}</h3>
-                  </div>
-               </div>
-               <div className="d-flex justify-content-center">
-                  <div className="email">
-                     <h3>Email: {application.email}</h3>
-                  </div>
-                  <div className="phone">
-                     <h3>Телефон: {application.phone}</h3>
-                  </div>
-               </div>
-               <div className="approved">
-                  <h3>Статус: {application.approved}</h3>
-               </div>
-               <div className="course">
-                  <h3>Курс: {application.courses}</h3>
                </div>
 
-               <Button variant="success" onClick={Approve}>
-                  Принять
-               </Button>
-               <Button variant="success" onClick={Reject}>
-                  Отклонить
-               </Button>
-               <Button
-                  variant="success"
-                  onClick={() => navigate('/applications')}
-               >
-                  Назад
-               </Button>
+               <div className="form-outline mb-4">
+                  <Form.Control
+                     type="text"
+                     className="form-control"
+                     id="applicantId"
+                     value={application.id_code}
+                     readOnly={true}
+                  />
+                  <Form.Label className="form-label" for="applicantId">
+                     Личный код
+                  </Form.Label>
+               </div>
+
+               <div className="row mb-4">
+                  <div className="col">
+                     <div className="form-outline">
+                        <Form.Control
+                           type="date"
+                           id="applicantBirthday"
+                           className="form-control"
+                           value={application.date_of_birth}
+                           readOnly={true}
+                        />
+                        <Form.Label
+                           className="form-label"
+                           for="applicantBirthday"
+                        >
+                           Дата рождения
+                        </Form.Label>
+                     </div>
+                  </div>
+                  <div className="col">
+                     <div className="form-outline">
+                        <Form.Control
+                           type="text"
+                           id="applicantEducation"
+                           className="form-control"
+                           value={application.education}
+                           readOnly={true}
+                        />
+                        <Form.Label
+                           className="form-label"
+                           for="applicantEducation"
+                        >
+                           Образование
+                        </Form.Label>
+                     </div>
+                  </div>
+               </div>
+
+               <div className="row mb-4">
+                  <div className="col">
+                     <div className="form-outline">
+                        <Form.Control
+                           type="text"
+                           id="applicantAddress"
+                           className="form-control"
+                           value={application.address}
+                           readOnly={true}
+                        />
+                        <Form.Label
+                           className="form-label"
+                           for="applicantAddress"
+                        >
+                           Адрес проживания
+                        </Form.Label>
+                     </div>
+                  </div>
+                  <div className="col">
+                     <div className="form-outline">
+                        <Form.Control
+                           type="text"
+                           id="applicantCity"
+                           className="form-control"
+                           value={application.city}
+                           readOnly={true}
+                        />
+                        <Form.Label
+                           className="form-label"
+                           for="applicantCity"
+                        >
+                           Город
+                        </Form.Label>
+                     </div>
+                  </div>
+               </div>
+
+               <div className="row mb-4">
+                  <div className="col">
+                     <div className="form-outline">
+                        <Form.Control
+                           type="email"
+                           id="applicantEmail"
+                           className="form-control"
+                           value={application.email}
+                           readOnly={true}
+                        />
+                        <Form.Label
+                           className="form-label"
+                           for="applicantEmail"
+                        >
+                           Email
+                        </Form.Label>
+                     </div>
+                  </div>
+                  <div className="col">
+                     <div class="form-outline">
+                        <Form.Control
+                           type="number"
+                           id="applicantPhone"
+                           className="form-control"
+                           value={application.phone}
+                           readOnly={true}
+                        />
+                        <Form.Label
+                           className="form-label"
+                           for="applicantPhone"
+                        >
+                           Номер телефона
+                        </Form.Label>
+                     </div>
+                  </div>
+               </div>
+
+               <div className="form-outline mb-4">
+                  <Form.Control
+                     type="text"
+                     className="form-control"
+                     id="applicantCourse"
+                     placeholder="Курс"
+                     value={application.courses}
+                     readOnly={true}
+                  />
+                  <Form.Label className="form-label" for="applicantCourse">
+                     Курс
+                  </Form.Label>
+               </div>
+               </Form>
+               <div className="infoBtns">
+                  <div className='actionBtns'>
+                     <Button variant="success d-flex m-2" onClick={Approve}>
+                        Принять
+                     </Button>
+                     <Button variant="danger d-flex m-2" onClick={Reject}>
+                        Отклонить
+                     </Button>
+                  </div>
+                  <div className='backBtn'>
+                     <Button variant="link d-flex m-2" style={{ textDecoration: 'none' }} onClick={() => navigate('/applications')}>
+                        Назад к списку
+                     </Button>
+                  </div>
+               </div>
             </Card.Body>
          </Card>
       </Container>

@@ -83,6 +83,7 @@ export default class Footer extends Component {
                   <a href="https://www.youtube.com/channel/UCLxa63lO1rkF62tv8d7P4Cw/videos">Kooli TV</a>
                   <a href="/Login">Admin panel</a>
                </div>
+               <hr></hr>
                <div>
                   <p>
                      Copyright 2023 © Ida-Virumaa Kutsehariduskeskus. Daniil

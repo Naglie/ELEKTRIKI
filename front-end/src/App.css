@@ -425,6 +425,8 @@ footer h3, p, span {
 
 /* Admin panel (application panel) */
 
+/* Login panel */
+
 /* #login {
   width: 300%;
   background-color: black;
@@ -435,3 +437,31 @@ footer h3, p, span {
   text-align: center;
   margin-bottom: 2rem;
 } */
+
+/* End of Login panel */
+
+
+/* Application details page */
+
+
+
+.infoBtns {
+  display: flex;
+  justify-content: center;
+}
+
+.actionBtns {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.backBtn {
+  display: flex;
+  margin: 1rem;
+  text-decoration: none;
+  
+}
+/* End of Application details page */
+
+/* End of Admin panel (application panel) */
