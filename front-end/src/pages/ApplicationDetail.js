@@ -25,6 +25,12 @@ export default function ApplicationDetail() {
       navigate('/applications');
    };
 
+   const Reject = async (e) => {
+      e.preventDefault();
+      await axios.put(`http://localhost:5000/application/reject/${id}`);
+      navigate('/applications');
+   };
+
    return (
       <Container className="mt-1">
          <h2 className="text-center mt-3">Заявка #{application.id}</h2>
@@ -76,8 +82,17 @@ export default function ApplicationDetail() {
                   <h3>Курс: {application.courses}</h3>
                </div>
 
-               <Button variant="success" onClick={() => Approve}>
+               <Button variant="success" onClick={Approve}>
                   Принять
+               </Button>
+               <Button variant="success" onClick={Reject}>
+                  Отклонить
+               </Button>
+               <Button
+                  variant="success"
+                  onClick={() => navigate('/applications')}
+               >
+                  Назад
                </Button>
             </Card.Body>
          </Card>
