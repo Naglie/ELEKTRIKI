@@ -68,3 +68,42 @@ export const rejectApplication = async (req, res) => {
       res.status(500).json({ error: error.message });
    }
 };
+
+export const getApplicationByStatusApproved = async (req, res) => {
+   try {
+      const application = await Application.findAll({
+         where: {
+            approved: 'Принято',
+         },
+      });
+      res.json(application);
+   } catch (error) {
+      res.status(500).json({ error: error.message });
+   }
+};
+
+export const getApplicationByStatusRejected = async (req, res) => {
+   try {
+      const application = await Application.findAll({
+         where: {
+            approved: 'Отклонено',
+         },
+      });
+      res.json(application);
+   } catch (error) {
+      res.status(500).json({ error: error.message });
+   }
+};
+
+export const getApplicationByStatusPending = async (req, res) => {
+   try {
+      const application = await Application.findAll({
+         where: {
+            approved: 'На рассмотрении',
+         },
+      });
+      res.json(application);
+   } catch (error) {
+      res.status(500).json({ error: error.message });
+   }
+};

@@ -17,7 +17,7 @@ export default function About() {
                  <div className="descBox">
                     <FontAwesomeIcon icon={faFlag} className="fa-2xl" />
                     <h3>Языки обучения</h3>
-                    <p>Русский, Казахский</p>
+                    <p>Русский, Эстонский</p>
                  </div>
                  <div className="descBox">
                     <FontAwesomeIcon icon={faUser} className="fa-2xl" />
@@ -35,7 +35,7 @@ export default function About() {
                  <div className="descBox">
                     <FontAwesomeIcon icon={faStarOfDavid} className="fa-2xl" />
                     <h3>Уровень обучения</h3>
-                    <p>Професиональное обучение</p>
+                    <p>Профессиональное обучение</p>
                  </div>
                  <div className="descBox">
                     <FontAwesomeIcon

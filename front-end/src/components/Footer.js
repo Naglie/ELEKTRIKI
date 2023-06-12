@@ -14,20 +14,15 @@ export default class Footer extends Component {
                   <div>
                      <h3>Партнеры по сотрудничеству</h3>
                   </div>
-                  <div className="d-flex footerPartnerImages">                  
+                  <div className="d-flex footerPartnerImages">
                      <img
                         src={img1}
                         width="255"
                         height="100"
                         alt="hariduskopter"
                      ></img>
-                     <img 
-                        src={img2} 
-                        width="255" 
-                        height="100" 
-                        alt="harno"
-                     ></img>
-                  {/* <a href='https://hariduskopter.ee/'></a>
+                     <img src={img2} width="255" height="100" alt="harno"></img>
+                     {/* <a href='https://hariduskopter.ee/'></a>
                            <a href='https://www.harno.ee/'></a> 
                            <a href='https://integratsioon.ee/'></a>
                            <a href='https://www.kutseregister.ee/ctrl/et/KAO/vaata/10583873'></a>
@@ -74,13 +69,39 @@ export default class Footer extends Component {
             </div>
             <div className="text-center" fluid>
                <div id="links">
-                  <a href="https://kutsehariduskeskus.ee/ru">Главный сайт</a>
-                  <a href="https://kutsehariduskeskus.ee/ru/sitemap">Карта главного сайта</a>
-                  <a href="https://www.facebook.com/IVKHK">Facebook</a>
-                  <a href="https://www.instagram.com/idavirumaa_kutsehariduskeskus/">Instagram</a>
-                  <a href="https://www.youtube.com/channel/UC6TPd9ePy3n-vFQRgtbhx-w">Youtube</a>
-                  <a href="https://vk.com/ivkhk">VKontakte</a>
-                  <a href="https://www.youtube.com/channel/UCLxa63lO1rkF62tv8d7P4Cw/videos">Kooli TV</a>
+                  <a target="-blank" href="https://kutsehariduskeskus.ee/ru">
+                     Главный сайт
+                  </a>
+                  <a
+                     target="-blank"
+                     href="https://kutsehariduskeskus.ee/ru/sitemap"
+                  >
+                     Карта главного сайта
+                  </a>
+                  <a target="-blank" href="https://www.facebook.com/IVKHK">
+                     Facebook
+                  </a>
+                  <a
+                     target="-blank"
+                     href="https://www.instagram.com/idavirumaa_kutsehariduskeskus/"
+                  >
+                     Instagram
+                  </a>
+                  <a
+                     target="-blank"
+                     href="https://www.youtube.com/channel/UC6TPd9ePy3n-vFQRgtbhx-w"
+                  >
+                     Youtube
+                  </a>
+                  <a target="-blank" href="https://vk.com/ivkhk">
+                     VKontakte
+                  </a>
+                  <a
+                     target="-blank"
+                     href="https://www.youtube.com/channel/UCLxa63lO1rkF62tv8d7P4Cw/videos"
+                  >
+                     Kooli TV
+                  </a>
                   <a href="/Login">Admin panel</a>
                </div>
                <hr></hr>

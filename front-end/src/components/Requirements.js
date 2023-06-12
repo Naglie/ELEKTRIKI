@@ -4,7 +4,7 @@ export default function Requirements() {
   return (
      <div id="requirements">
         <div className="reqHeading">
-           <h2>Условия для поступления для обучения</h2>
+           <h2>Условия для поступления</h2>
         </div>
         <div className="reqContainer">
            <div className="reqTextBox">

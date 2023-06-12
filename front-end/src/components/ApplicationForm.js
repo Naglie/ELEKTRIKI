@@ -160,7 +160,7 @@ export default function ApplicationForm() {
                                     className="form-label"
                                     for="applyForm"
                                  >
-                                    Адрес проживания
+                                    Улица, дом, квартира
                                  </Form.Label>
                               </div>
                            </div>
