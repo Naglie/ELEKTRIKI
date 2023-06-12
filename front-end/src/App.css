@@ -57,6 +57,9 @@
 .header-bg {
   background-color: #FF8F00;
 }
+.header-bg2 {
+  background-color: rgb(69, 69, 69);
+}
 a.nav-link {
   color: #ffffff;
 }
@@ -461,6 +464,10 @@ footer h3, p, span {
   margin: 1rem;
   text-decoration: none;
   
+}
+
+.aou {
+  background-color: black;
 }
 /* End of Application details page */
 

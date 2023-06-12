@@ -7,8 +7,8 @@ import logo from '../assets/logo.png';
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 
-export default function Header() {
-   const [color, setColor] = useState(false);
+export default function HeaderAdmin() {
+   const [color, setColor] = useState(true);
    const [name, setName] = useState('');
    let navbar_admin = [];
 
@@ -16,7 +16,7 @@ export default function Header() {
       if (window.scrollY >= 160) {
          setColor(true);
       } else {
-         setColor(false);
+         setColor(true);
       }
    };
 
@@ -44,7 +44,7 @@ export default function Header() {
    window.addEventListener('scroll', changeNavbarColor);
 
    return (
-      <div className={color ? 'header header-bg' : 'header'}>
+      <div className={color ? 'header header-bg2' : 'header'}>
          <Navbar
             scrolling
             dark
