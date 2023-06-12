@@ -15,32 +15,32 @@ export default function About() {
               </div>
               <div className="descBoxes">
                  <div className="descBox">
-                    <FontAwesomeIcon icon={faFlag} className="fa-2x1" />
+                    <FontAwesomeIcon icon={faFlag} className="fa-2xl" />
                     <h3>Языки обучения</h3>
                     <p>Русский, Казахский</p>
                  </div>
                  <div className="descBox">
-                    <FontAwesomeIcon icon={faUser} className="fa-2x1" />
+                    <FontAwesomeIcon icon={faUser} className="fa-2xl" />
                     <h3>Форма обучения</h3>
                     <p>Стационарное (Дневное/Вечернее)</p>
                  </div>
                  <div className="descBox">
                     <FontAwesomeIcon
                        icon={faMapLocationDot}
-                       className="fa-2x1"
+                       className="fa-2xl"
                     />
                     <h3>Место обучения</h3>
                     <p>Йыхви, Нарва</p>
                  </div>
                  <div className="descBox">
-                    <FontAwesomeIcon icon={faStarOfDavid} className="fa-2x1" />
+                    <FontAwesomeIcon icon={faStarOfDavid} className="fa-2xl" />
                     <h3>Уровень обучения</h3>
                     <p>Професиональное обучение</p>
                  </div>
                  <div className="descBox">
                     <FontAwesomeIcon
                        icon={faClockRotateLeft}
-                       className="fa-2x1"
+                       className="fa-2xl"
                     />
                     <h3>Период обучения</h3>
                     <p>2/3 года</p>
