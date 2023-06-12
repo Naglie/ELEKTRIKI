@@ -12,7 +12,7 @@ function App() {
    if (
       path === '/Login' ||
       path === '/applications' ||
-      path === '/applications/:id'
+      path === '/applications/'
    ) {
       navbar = <HeaderAdmin />;
    } else if (path === '/' || path === '') {

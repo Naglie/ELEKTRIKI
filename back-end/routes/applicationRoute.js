@@ -13,6 +13,6 @@ applicationrouter.get('/', getApplications);
 applicationrouter.get('/detail/:id', getApplicationById);
 applicationrouter.post('/send', createApplication);
 applicationrouter.put('/approve/:id', approveApplication);
-applicationrouter.delete('/reject/:id', rejectApplication);
+applicationrouter.put('/reject/:id', rejectApplication);
 
 export default applicationrouter;

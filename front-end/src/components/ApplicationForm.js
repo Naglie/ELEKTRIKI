@@ -32,7 +32,8 @@ export default function ApplicationForm() {
             phone: phone,
             courses: courses,
          });
-         navigate('/#description');
+         navigate('/');
+         window.location.reload();
       } catch (err) {
          console.log(err);
       }
@@ -121,14 +122,20 @@ export default function ApplicationForm() {
                            <div className="col">
                               <div className="form-outline">
                                  <Form.Control
-                                    type="text"
+                                    as={'select'}
                                     id="applyForm"
                                     className="form-control"
                                     value={education}
                                     onChange={(e) =>
                                        setEducation(e.target.value)
                                     }
-                                 />
+                                 >
+                                    <option value="Среднее">Среднее</option>
+                                    <option value="Среднее специальное">
+                                       Среднее специальное
+                                    </option>
+                                    <option value="Высшее">Высшее</option>
+                                 </Form.Control>
                                  <Form.Label
                                     className="form-label"
                                     for="applyForm"
@@ -215,13 +222,19 @@ export default function ApplicationForm() {
 
                         <div className="form-outline mb-4">
                            <Form.Control
-                              type="text"
-                              className="form-control"
+                              as={'select'}
+                              className="form-control text-center"
                               id="applyForm"
-                              placeholder="Курс"
                               value={courses}
                               onChange={(e) => setCourses(e.target.value)}
-                           />
+                           >
+                              <option value="Электрик внутренних работ, 3 года">
+                                 Электрик внутренних работ, 3 года
+                              </option>
+                              <option value="Электрик внутренних работ, 2 года">
+                                 Электрик внутренних работ, 2 года
+                              </option>
+                           </Form.Control>
                            <Form.Label className="form-label" for="applyForm">
                               Курс
                            </Form.Label>
