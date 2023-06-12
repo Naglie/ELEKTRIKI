@@ -92,17 +92,17 @@ export default function ApplicationList() {
                </Row>
                <div className="d-flex flex-row justify-content-center">
                   <div className="m-3">
-                     <p style={{ color: 'black' }}>
+                     <p style={{ color: 'blue' }}>
                         Количество заявок на рассмотрении: {pending.length}
                      </p>
                   </div>
                   <div className="m-3">
-                     <p style={{ color: 'black' }}>
+                     <p style={{ color: 'red' }}>
                         Количество отклоненных заявок: {rejected.length}
                      </p>
                   </div>
                   <div className="m-3">
-                     <p style={{ color: 'black' }}>
+                     <p style={{ color: '#5cbd3e' }}>
                         Количество принятых заявок: {approved.length}
                      </p>
                   </div>
