@@ -1,0 +1,2 @@
+email: admin@ayaya.dev
+password: 123456
